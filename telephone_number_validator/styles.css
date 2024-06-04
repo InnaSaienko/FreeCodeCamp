@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(40, 34, 118);
+    font-family: Helvetica;
+    text-align : center;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+}
+
+main {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 540px;
+  background-color: black;
+}
+.phone-background {
+  position: relative;
+  margin: 30px auto;
+  background-color: rgb(220, 227, 238);
+  width: 250px;
+  height: 380px;
+  border: 15px solid rgb(220, 227, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.camera {
+  margin: 10px auto;
+  width: 11px;
+  height: 11px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 30px;
+  border: 1px solid rgb(214, 214, 214);
+} 
+#user-input {
+  margin: 10% auto;
+  height: 42px;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  font-size: 16px;
+}
+#results-div {
+  margin: auto;
+  color: black;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 50px 10px;
+}
+.phone-footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  width: 90px;
+  margin: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}

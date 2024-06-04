@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ROMAN NUMERAL CONVERTOR</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Cash Register Project</h1>
+        <img src="assets/img/logo.png" class="header_logo" alt="Logo image">
+    </header>
+    <main>
+        <div class="output" id="output" method="post"></div>
+        <div class="input" method="get">
+            <label for="cash">Enter cash from custormer:</label><br />
+            <input type="number" class="input_cash" id="cash" value>
+            <button class="input_button" type="button" id="purchase-btn">Purchase</button>
+        </div>
+        <div class="container" id="cash-in-drawer">
+            <div class="top-display-screen">
+                <p id="price-screen" class="price-screen">Total: $3.26</p>
+                <div class="connector"></div>
+            </div>
+            <div class="register">
+                <div class="register_buttons">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                </div>
+                <div class="register_drawer" id="register_drawer">
+                    <h3>Change in drawer:</h3>
+                    <p>Pennies: $1.01</p>
+                    <p>Nickles: $2.05</p>
+                    <p>Dimes: $3.1</p>
+                    <p>Quarters: 4.25</p>
+                    <p>Ones: $90</p>
+                    <p>Fives: $55</p>
+                    <p>Tens: $20</p>
+                    <p>Twenties: $60</p>
+                    <p>Hundreds: $100</p>
+                </div>
+            </div>
+            <div class="button-register">
+
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

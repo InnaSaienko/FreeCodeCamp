@@ -1,0 +1,53 @@
+body {
+    color: black;
+    text-align: center;
+    background-color: rgb(62, 56, 149);
+    font-family: Helvetica;
+}
+h1 {
+    color: #fff;
+    font-size: 30px;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+fieldset {
+    font-size: 20px;
+    border: solid;
+    background-color: white;
+    margin: 100px;
+    padding: 50px;
+    border-radius: 20px;
+    align-items: center;
+}
+.palindrome-btn {
+    border-radius: 15px;
+    background-color: #5a01a7;
+    color: #fff;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+}
+  .palindrome-input {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.result {
+   color: rgb(3, 3, 3);
+   margin-top: 10%;
+   padding: 1em;
+   
+}
+
+  
