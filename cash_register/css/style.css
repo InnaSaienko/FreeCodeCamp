@@ -69,8 +69,6 @@ main .input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0px;
-  padding: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -115,7 +113,6 @@ main .input_button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0px;
   padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -124,30 +121,22 @@ main .input_button {
   padding: 0 calc(50vw - 200px - 12%);
 }
 .container .top-display-screen .price-screen {
-  margin-left: -20px;
-  border: 10px solid #99c9ff;
-  height: 60px;
-  width: 240px;
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0px;
-  padding: 0px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 1.5rem;
   margin: 0;
+  margin-left: -20px;
+  border: 10px solid #99c9ff;
+  height: 60px;
+  width: 240px;
+  color: #fff;
+  font-size: 1.5rem;
 }
 .container .top-display-screen .connector {
   width: 50px;
@@ -159,8 +148,8 @@ main .input_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: start;
@@ -168,12 +157,6 @@ main .input_button {
           align-items: flex-start;
   gap: 20px;
   padding: 20px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   border-radius: 35px 35px 0 0;
   background-color: #99c9ff;
 }

@@ -1,6 +1,5 @@
 @import "vars";
 @import "mixins";
-// @import "keyframes";
 
 * {
     box-sizing: border-box;
@@ -10,7 +9,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background-color: $color-bg;
+    background-color: #11093f;
 }
 
 p {
@@ -21,6 +20,7 @@ p {
         text-transform: uppercase;
     }
 }
+
 .header {
     display: flex;
     justify-content: center;
@@ -35,7 +35,13 @@ p {
 }
 
 main {
-    @include flex(center, center, 20px, 0px, column);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
+    flex-direction: column;
 
     & #output {
         text-align: center;
@@ -43,7 +49,11 @@ main {
     }
 
     & .input {
-        @include flex(center, center, 0px, 0px, column);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         color: #fff;
 
         &_cash {
@@ -54,26 +64,46 @@ main {
         }
 
         &_button {
-            @include button(center);
+            display: inline-flex;
+            justify-content: center;
+            outline: none;
+            overflow: hidden;
+            padding: 10px;
+            min-width: 150px;
+            font-size: 1.2em;
+            letter-spacing: 0.5px;
+            color: black;
+            background-color: orange;
+            border: 1px solid darkorange;
+            border-radius: 50px;
+            cursor: pointer;
         }
     }
 }
 
 .container {
-    @include flex(center, center, 0px, 20px, column);
-    padding: 0 calc(50vw - ($form-width/2) - 12%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    padding: 0 calc(50vw - (200px) - 12%);
 
     & .top-display-screen {
 
         & .price-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
             margin-left: -20px;
             border: 10px solid #99c9ff;
             height: 60px;
             width: 240px;
             color: #fff;
-            @include flex(center, center, 0px, 0px);
             font-size: 1.5rem;
-            margin: 0;
+            
         }
 
         & .connector {
@@ -85,8 +115,14 @@ main {
     }
 
     & .register {
-        @include flex(space-around, flex-start, 20px, 20px);
+        display: flex;
         flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        // @include flex(space-around, flex-start, 20px, 20px);
+        // flex-wrap: nowrap;
         border-radius: 35px 35px 0 0;
         background-color: #99c9ff;
 

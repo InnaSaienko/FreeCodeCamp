@@ -32,7 +32,7 @@ const cashDrawerDisplay = document.getElementById('register_drawer');
 const formatResults = (result) => {
 
   const cashRegister = result;
-  let outputHTML = `<p>Status: '${cashRegister.status}'</p>`;
+  let outputHTML = `<p>Status: ${cashRegister.status}</p>`;
   cashRegister.change.forEach(([denomination, amount]) => {
     outputHTML += `<p>${denomination}: $${amount}</p>`;
   });
