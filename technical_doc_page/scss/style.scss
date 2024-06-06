@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 400 16px "Montserrat", sans-serif;
+}
+
+.header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 160%;
+    padding: 10px 0;
+    color: #140f0f;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 15px 0px 0px 20px;
+    color: #524646;
+}
+
+ol>li {
+    list-style-type: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #524646;
+    cursor: pointer;
+}
+
+p {
+    line-height: 150%;
+    color: #524646;
+}
+
+.code {
+    background-color: #f5f5f5;
+    color: #524646;
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: auto;
+
+    & .keyword {
+        color: #04520e;
+        font-weight: bold;
+    }
+    & .comment {
+        color: #51b486;
+        font-style: italic;
+        font-weight: normal;
+    }
+    & .variable {
+        color: #000;
+        font-weight: bold;
+    }
+
+    & .value {
+        color: #e20808;
+        font-weight: bold;
+    }
+
+}
+
+.navbar {
+    position: fixed;
+    width: 250px;
+    float: left;
+    top: 0;
+    left: 0;
+    border-right: 2px solid;
+    border-color: #524646;
+
+    & .header {
+        padding-left: 30px;
+    }
+
+    & .nav {
+        &-item {
+            color: #524646;
+            border-top: 1px solid;
+        }
+
+        &-link {
+            color: #524646;
+            padding: 20px 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.main-doc {
+    position: relative;
+    margin-left: 300px;
+}
