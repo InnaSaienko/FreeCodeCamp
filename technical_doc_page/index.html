@@ -10,15 +10,22 @@
 </head>
 
 <body>
-    <nav class="navbar" id="navbar">
+    <div class="header-top">
         <header class="header">JS Documentation</header>
-        <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="#JavaScript_Tutorial">JS Tutorial</a></li>
-            <li class="nav-item"><a class="nav-link" href="#JavaScript_Introduction">JS Introduction</a></li>
-            <li class="nav-item"><a class="nav-link" href="#JavaScript_Use">JS Use</a></li>
-            <li class="nav-item"><a class="nav-link" href="#JavaScript_Syntax">JS Syntax</a></li>
+    <nav class="navbar" id="navbar">
+        <input type="checkbox" class="burger" id="navbar_burger">
+        <label for="navbar_burger" class="burger__img"></label>
+        <ul class="menu-nav">
+            <li class="nav-item"><a class="nav-link" href="#JavaScript_Tutorial">JavaScript Tutorial</a></li>
+            <li class="nav-item"><a class="nav-link" href="#JavaScript_Introduction">JavaScript Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="#JavaScript_Use">JavaScript Use</a></li>
+            <li class="nav-item"><a class="nav-link" href="#JavaScript_Syntax">JavaScript Syntax</a></li>
+            <li class="nav-item"><a class="nav-link" href="#JavaScript_Variable_Scope">JavaScript Variable Scope</a>
+            </li>
         </ul>
     </nav>
+    </div>
+    
     <main class="main-doc" id="main-doc">
         <section class="main-section" id="JavaScript_Tutorial">
             <header class="header">JavaScript Tutorial</header>
@@ -54,7 +61,7 @@
             </article>
         </section>
         <section class="main-section" id="JavaScript_Use">
-            <header class="header">Use</header>
+            <header class="header">JavaScript Use</header>
             <article>
                 <p>JavaScript is typically inserted into HTML when used on the web, either directly in the file in an
                     HTML tag, or linked to a separate file containing the script.</p>
@@ -73,7 +80,7 @@
             </article>
         </section>
         <section class="main-section" id="JavaScript_Syntax">
-            <header class="header">Syntax</header>
+            <header class="header">JavaScript Syntax</header>
             <article>
                 <p>A JavaScript <a href="https://simple.wikipedia.org/wiki/Computer_program" target="_blank">program</a>
                     is made of a collection of instructions called "statements". A semicolon marks the end of a
@@ -112,6 +119,32 @@
                             href="https://simple.wikipedia.org/wiki/Compiled_language" target="_blank">compiled</a>.
                         This means that JavaScript needs to be run by another computer program (an interpreter), but
                         finished Java can be run as its own program.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript_Variable_Scope">
+            <header class="header">JavaScript Variable Scope</header>
+            <article>
+                <p>When you declare a variable outside of any function, it is called a global variable, because it is
+                    available to any other code in the current document. When you declare a variable within a function,
+                    it is called a local variable, because it is available only within that function.</p>
+                <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared
+                    within a block is local to the function (or global scope) that the block resides within. For example
+                    the following code will log 5, because the scope of x is the function (or global context) within
+                    which x is declared, not the block, which in this case is an if statement.</p>
+                <h3 class="title3">Data types</h3>
+                <ul class="hlijst-marker">
+                    <li class="marker">Boolean. true and false.</li>
+                    <li class="marker">null. A special keyword denoting a null value. Because JavaScript is
+                        case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                    <li class="marker">undefined. A top-level property whose value is undefined.</li>
+                    <li class="marker">Number. 42 or 3.14159.</li>
+                    <li class="marker">String. "Howdy"</li>
+                    <li class="marker">Symbol (new in ECMAScript 2015). A data type whose instances are unique and
+                        immutable.</li>
+                    <li class="marker">Object</li>
+                    <code
+                        class="code">document.getElementById(<span class="keyword">'demo'</span>).innerHTML = <span>'Hello JavaScript'</span>;</code>
                 </ul>
             </article>
         </section>
